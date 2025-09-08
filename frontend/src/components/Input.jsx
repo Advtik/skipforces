@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Contests } from './Contests';
-import { UserInfo } from './userinfo';
+import { UserInfo } from './UserInfo';
 import { ContestPieChart } from './ContestPieChart';
 
 export function TakeInput() {
