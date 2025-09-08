@@ -284,13 +284,24 @@ input:focus {
   height: 647px;   /* or set fixed height if you want */
   flex-shrink: 0; /* prevent it from shrinking */
 }
-
 #piechart{
   display: flex;
   justify-content: center;
-  margin-top: 310px;
+  margin-top: 10px;
   border-radius: 10px;
   background: #72779d5e; /* or your white-ish background */
+}
+
+
+#stats{
+  margin-top: 10px;
+  background: #72779d5e;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: large;
 }
 /* Slide down animation */
 @keyframes slideDown {

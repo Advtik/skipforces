@@ -45,7 +45,7 @@ export function TakeInput() {
         <div id="main">
           <div id="head">
             <h1 id="welcome">Welcome to Skipforces</h1>
-            <h3 id="quote">Proves that you are not a suspicious programmer in one click</h3>
+            <h3 id="quote">Checks how suspicious you are in one click</h3>
           </div>
           <input 
             type="text"
@@ -67,6 +67,11 @@ export function TakeInput() {
             </div>
             <div >
               <div id="pie">
+                <div id="stats">
+                  <h2>{contestdata[0].name}  :   {contestdata[0].value}</h2>
+                  <h2>{contestdata[1].name}  :   {contestdata[1].value}</h2>
+                  <h2>{contestdata[2].name}  :   {contestdata[2].value}</h2>
+                </div>
                 <ContestPieChart data={contestdata}></ContestPieChart>
               </div>
             </div>

@@ -69,7 +69,7 @@ async function userinfo(handle) {
             throw new Error("User not found or API error");
         }
 
-        let info = data.result[0]; // API returns an array
+        let info = data.result[0]; //API returns an array
 
         let user = {
             handle: info.handle || "",
