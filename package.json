@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "recharts": "^3.1.2"
-  }
+  },
+  "scripts": {
+  "start": "node skips.js",
+  "dev": "nodemon skips.js",
+  "build": "echo 'No build needed for Node.js backend'"
+   }
 }
