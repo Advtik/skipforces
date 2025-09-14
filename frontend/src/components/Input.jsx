@@ -14,7 +14,7 @@ export function TakeInput() {
   function fetchSkippedContests() {
     setLoading(true);
     setdata(true);
-    fetch(`${VITE_API_URL}/skips`, {
+    fetch(`${import.meta.env.VITE_API_URL}/skips`, {
       method: "POST",
       body: JSON.stringify({
         handle: handle,
