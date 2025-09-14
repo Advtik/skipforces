@@ -10,11 +10,11 @@ export function TakeInput() {
   const [data, setdata]= useState(true);
   const [user,setuser]=useState({});
   const [contestdata,setcontestdata]=useState([]);
-
+  
   function fetchSkippedContests() {
     setLoading(true);
     setdata(true);
-    fetch("http://localhost:3000/skips", {
+    fetch(`${VITE_API_URL}/skips`, {
       method: "POST",
       body: JSON.stringify({
         handle: handle,
