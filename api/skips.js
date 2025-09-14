@@ -17,6 +17,7 @@ export default async function handler(req, res) {
         if (result.result[i].verdict == "SKIPPED") {
           if (!arr.includes(result.result[i].contestId)) {
             arr.push(result.result[i].contestId);
+            
           }
         }
       }
