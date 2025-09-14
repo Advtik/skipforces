@@ -14,7 +14,7 @@ export function TakeInput() {
   function fetchSkippedContests() {
     setLoading(true);
     setdata(true);
-    fetch("https://skipforces-by-advtik.vercel.app/api/skips", {
+    fetch("http://localhost:3000/skips", {
       method: "POST",
       body: JSON.stringify({
         handle: handle,
