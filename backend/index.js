@@ -137,6 +137,9 @@ app.post("/skips",async function(req,res){
     console.log(contestdata);
 });
 
+app.get("/", (req, res) => {
+    res.send("Backend is running ✅");
+});
 
 const PORT = process.env.PORT || 3000;  // Render provides PORT, fallback for local dev
 app.listen(PORT, () => {
