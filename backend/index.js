@@ -137,6 +137,11 @@ app.post("/skips",async function(req,res){
     console.log(contestdata);
 });
 
-app.listen(3000,function(){
-    console.log("Server is running on port 3000");
-});
+if (require.main === module) {
+    app.listen(3000, () => {
+        console.log("Server running on http://localhost:3000");
+    });
+}
+
+module.exports = app;
+
