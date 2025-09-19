@@ -123,10 +123,23 @@ input:focus {
   animation: spin 1s linear infinite; /* Infinite rotation */
 }
 
-/* Spin animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+#bada{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#info{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+#image{
+  border: solid;
+  border-color: #5c5a5a;
+  border-radius: 8px;
+  width: 250px;
 }
 
 #userinfo {
@@ -137,40 +150,21 @@ input:focus {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 28px;
   max-width: 10000px;
-  width: 800px;
+  width: 700px;
   height:260px;
+  margin-top: 5px;
+  margin-left: 30px;
   /* margin-left: -750px; */
   text-align: left;
-  display: flex;
   justify-content: space-between;
   transition: all 0.3s ease; /* smooth animation */
   animation: fadeInScale 0.8s ease-out forwards;
 }
-
-@keyframes fadeInScale {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+#userinfo p {
+  color: #333;
+  font-size: 3986px;
+  line-height: 1.5;
 }
-/* Hover effect */
-#userinfo:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-}
-
-/* Headings */
-/* #userinfo h1, 
-#userinfo h2, 
-#userinfo h3 {
-  color: #e2cdcd;
-  margin: 10px 0;
-  font-family: "Segoe UI", Roboto, sans-serif;
-} */
 
 #maxrank{
   color: #e2cde2;
@@ -183,28 +177,6 @@ input:focus {
   color: #e2dce2;
   margin-top: 10px;
 }
-/* Paragraph / small details */
-#userinfo p {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: absolute;   /* or fixed */
-  top: 0;
-  left: 0;
-  width: 100%;          /* stretch full width */
-  padding: 20px;
-  box-sizing: border-box;
-  flex: 1;
-  max-width: 60%;
-}
-
 
 #contests {
   font-size: small;
@@ -214,10 +186,11 @@ input:focus {
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   margin-top: 10px;
-  width: 807px;
+  margin-left: 30px;
+  width: 707px;
   padding: 25px;
   text-align: left;
-  height: 311px;
+  height: 290px;
   transition: all 0.3s ease; /* smooth animation */
   animation: fadeInScale 0.8s ease-out forwards;
 }
@@ -226,62 +199,16 @@ input:focus {
   margin-top: -15px;
 }
 
-@keyframes fadeInScale {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-/* Hover effect */
-#contests:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-}
-
-/* #deserve{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-top: ;
-} */
-#maxrating,#country,#currentrating{
-  margin-bottom: -10px;
-}
-
-#image{
-  border: solid;
-  border-color: #5c5a5a;
-  border-radius: 8px;
-  width: 250px;
-}
-
-.bada {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; /* keep top aligned */
-  width: 200%;
-}
-.bada > div:last-child {
-  flex: 0.97;
-  display: flex;
-  justify-content: right;
-}
-
 #pie {
   background: #2e2f3a; /* or your white-ish background */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  margin-top: -19px;
+  margin-top: 5px;
   margin-bottom: -10px;
-  margin-left: -100px;
+  margin-left: 10px;
   width: 570px;  /* fixed width */
-  height: 647px;   /* or set fixed height if you want */
+  height: 628px;   /* or set fixed height if you want */
   flex-shrink: 0; /* prevent it from shrinking */
 }
 #piechart{
@@ -294,7 +221,6 @@ input:focus {
 
 
 #stats{
-  margin-top: 10px;
   background: #72779d5e;
   border-radius: 10px;
   padding-bottom: 40px;
@@ -303,6 +229,26 @@ input:focus {
   text-align: left;
   font-size: large;
 }
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* Slide down animation */
 @keyframes slideDown {
   to {
@@ -320,5 +266,12 @@ input:focus {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 1200px){
+  #bada{
+    display: flex;
+    flex-direction: column;
   }
 }

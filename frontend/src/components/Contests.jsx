@@ -9,7 +9,7 @@ export function Contests({ skippedcontests , handle}) {
     }
   }, []);
   return (
-    <div id="contests">
+    <div>
       {skiplength === 0 && (
         <div id="deserve">
           <h1>This person is Deserving</h1>

@@ -8,8 +8,8 @@ export function UserInfo({user,skippedcontests}){
         }
     }, []);
     return (
-        <div id="userinfo">
-            <div>
+        <div id="info">
+            <div id="handleinfo">
                 <h3 id="maxrank">
                     {user.maxrank.charAt(0).toUpperCase() + user.maxrank.slice(1)}
                 </h3>
@@ -24,7 +24,7 @@ export function UserInfo({user,skippedcontests}){
                 <h3 id="country">Country: {user.country}</h3>
                 <h3 id="rating">CurrentRating: {user.rating}</h3>
             </div>
-            <div>
+            <div >
                 <img id="image" src={user.titlePhoto} alt="CF Profile"></img>
             </div>
         </div>

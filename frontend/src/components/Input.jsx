@@ -32,7 +32,8 @@ export function TakeInput() {
         setcontestdata(json.contestdata);
       })
       .catch(function (err){
-        console.error("Failed to fetch:", err);
+        alert("Please enter a valid user handle");
+        setLoading(false);
       });
   }
 
@@ -60,12 +61,16 @@ export function TakeInput() {
 
       {!loading && !data &&(
         <>
-          <div className='bada'>
-            <div className='parent'>
-              <UserInfo user={user} skippedcontests={skippedcontests}></UserInfo> 
-              <Contests skippedcontests={skippedcontests} handle={handle}></Contests>
+          <div id="bada">
+            <div id='parent1'>
+              <div id='userinfo'>
+               <UserInfo user={user} skippedcontests={skippedcontests}></UserInfo> 
+              </div>
+              <div id='contests'>
+               <Contests skippedcontests={skippedcontests} handle={handle}></Contests>
+              </div>
             </div>
-            <div >
+            <div id='parent2' >
               <div id="pie">
                 <div id="stats">
                   <h2>{contestdata[0].name}  :   {contestdata[0].value}</h2>
