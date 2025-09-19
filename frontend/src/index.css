@@ -273,5 +273,13 @@ input:focus {
   #bada{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+  #pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    width: 718px;
   }
 }
