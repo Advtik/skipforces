@@ -145,6 +145,7 @@ input:focus {
   border-color: #5c5a5a;
   border-radius: 8px;
   width: 250px;
+  max-height: 270px;
 }
 
 #userinfo {
