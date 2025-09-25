@@ -26,6 +26,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  background-color: #111;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -93,6 +94,9 @@ input:focus {
   font-size: 1.3rem;
   opacity: 0;
   transform: translateY(-50px); /* start above */
+  background-color: #111111(0, 0, 0); /* fully opaque */
+  backdrop-filter: blur(100px); /* glass effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
   animation: slideDown 1s ease-out forwards;
 }
 
@@ -112,6 +116,7 @@ input:focus {
 #quote {
   width: 800px;
   color: hsl(0, 1%, 66%);
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #loader {
@@ -143,7 +148,7 @@ input:focus {
 }
 
 #userinfo {
-  background: #65698b5e; /* semi-transparent white */
+  background: #3b3c465e; /* semi-transparent white */
   backdrop-filter: blur(11px); /* glass effect */
   -webkit-backdrop-filter: blur(8px); /* Safari support */
   border-radius: 10px;
@@ -180,7 +185,7 @@ input:focus {
 
 #contests {
   font-size: small;
-  background: #65698b5e; /* semi-transparent white */
+  background: #3b3c465e; /* semi-transparent white */
   backdrop-filter: blur(11px); /* glass effect */
   -webkit-backdrop-filter: blur(8px); /* Safari support */
   border-radius: 10px;
@@ -200,7 +205,9 @@ input:focus {
 }
 
 #pie {
-  background: #2e2f3a; /* or your white-ish background */
+  background: #3b3c465e; /* semi-transparent white */
+  backdrop-filter: blur(11px); /* glass effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -216,12 +223,12 @@ input:focus {
   justify-content: center;
   margin-top: 10px;
   border-radius: 10px;
-  background: #72779d5e; /* or your white-ish background */
+  background: #4a4a525e; /* or your white-ish background */
 }
 
 
 #stats{
-  background: #72779d5e;
+  background: #4a4a525e; /* or your white-ish background */
   border-radius: 10px;
   padding-bottom: 40px;
   padding-top: 40px;
