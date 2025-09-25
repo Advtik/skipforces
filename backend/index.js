@@ -145,5 +145,3 @@ const PORT = process.env.PORT || 3000;  // Render provides PORT, fallback for lo
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
-
